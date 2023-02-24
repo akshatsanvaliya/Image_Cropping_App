@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <android.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+
+        android:theme="@style/Theme.CelebrarBase.NoActionBar"
+        app:popupTheme="@style/Theme.AppCompat.Light"/>
+    <TextView
+        android:layout_width="389dp"
+        android:layout_height="114dp"
+        android:layout_x="13dp"
+        android:layout_y="438dp"
+        android:background="@drawable/back"
+
+        android:gravity="bottom|center"
+        android:text="Upload Image"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:typeface="serif" />
+
+    <ImageView
+        android:id="@+id/ivcroppedimage"
+        android:layout_width="238dp"
+        android:layout_height="262dp"
+        android:layout_gravity="center"
+        android:layout_x="87dp"
+        android:layout_y="84dp"
+        app:layout_anchor="@+id/ivcroppedimage"
+        app:layout_anchorGravity="bottom|center"
+        />
+
+    <Button
+        android:id="@+id/btnimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_x="109dp"
+        android:layout_y="462dp"
+        android:text="Upload the image" />
+
+
+</AbsoluteLayout>
